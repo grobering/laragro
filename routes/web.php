@@ -10,12 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//hoalasldas
 Route::get('/', function () {
     return view('welcome');
 });
 
- //asdfsadfsdfsfdsf
+
  Route::get ('/name/{name}/apellido/{ap?}', function ($name, $ap = 'apellido'){
  		return 'hola soy  '.$name. ' ' .$ap;
  });
@@ -33,6 +33,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/articulos', 'ArticulosController@index');
+Route::resource('/articulos', 'ArticulosController');
 
-Route::get('/articulos', 'ArticulosController@index');
+Route::resource('/articulos', 'ArticulosController');
