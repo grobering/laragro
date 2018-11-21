@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+ //asdfsadfsdfsfdsf
  Route::get ('/name/{name}/apellido/{ap?}', function ($name, $ap = 'apellido'){
  		return 'hola soy  '.$name. ' ' .$ap;
  });
